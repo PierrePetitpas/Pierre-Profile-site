@@ -304,6 +304,7 @@ button {
 
 .cv__link{
     text-align: var(--text-center);
+    padding: 10px;
 }
 
 .div__button{
