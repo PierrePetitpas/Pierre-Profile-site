@@ -39,7 +39,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: var(--text-center);
-    background-size: 100%;
     background-color: var(--background-color);
   }
 
@@ -85,6 +84,13 @@ p {
     font-size: 1.5rem;
     line-height: var(--line-height);
     margin: 10px;
+}
+
+.text_contact{
+  color:  #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 30PX;
+  margin: 10px;
 }
 
 label {
@@ -137,6 +143,8 @@ button {
     color: var(--dark-blue) ;
     text-decoration: var(--text-deco);
     font-weight: bolder;
+    width: 200px;
+    font-size: 20px;
   }
 
   .navigation-list__item {
@@ -266,42 +274,6 @@ button {
     }
    }
 
-   @media all and (max-width: 500px) {
-    .grid {
-      grid-template-columns: 1fr;
-    }
-    h1 {
-        font-size: 1.5rem;
-    }
-    p, h2{
-        font-size: .7rem;
-    }
-  }
-
-  @media all and (min-width: 500px) and (max-width: 750px){
-    .grid {
-      grid-template-columns: 1fr 1fr;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    p, h2{
-        font-size: 1rem;
-    }
-
-  }
-
-  @media all and (max-width: 750px){
-    /* shared code */
-    .grid {
-        grid-gap: 10px;
-      }
-    .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-      }
-  }
-
 .cv__link{
     text-align: var(--text-center);
     padding: 10px;
@@ -318,9 +290,10 @@ button {
     display: inline-block;
     /* takes the font from the outer container */
     font-family: inherit;
+    font-size: 20px;
     /* styles the button */
-    background-color: var(--gray-green);
-    color: --primary-color;
+    background-color: var(--button-background-color);
+    color: var(--dark-blue);
     text-decoration: var(--text-deco);
     padding: 10px;
     border-radius: 3px;
@@ -328,7 +301,7 @@ button {
     border-bottom: 2px solid var(--black-background);
     transition-duration: 0.2s;
     transition-property: opacity;
-    width: 190px;
+    width: 220px;
   }
 
   .button:hover,
@@ -462,3 +435,60 @@ svg{
         animation: 
         5s gopher-rotate infinite alternate linear;
       }
+      
+      @media all and (max-width: 500px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+        p, h2{
+            font-size: .8rem;
+        }
+        .about__h2{
+          font-size: 1.2rem;
+        }
+        .profile__portrait{
+          display: none;
+        }
+        .button{
+          font-size: 1rem;
+        }
+        th{
+          font-size: 1.2rem;
+        }
+        td{
+          font-size: 1.2rem;
+        }
+        .page-header__item:first-child{
+         width: 100px;
+        }
+        .p__footer{
+          font-size: 1.5rem;
+        }
+      }
+
+  @media all and (min-width: 500px) and (max-width: 1200px){
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p, h2{
+        font-size: 1.3rem;
+    }
+
+  }
+
+  @media all and (max-width: 1200px){
+    /* shared code */
+    .grid {
+        grid-gap: 10px;
+      }
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+      }
+  }
