@@ -7,7 +7,7 @@
     <title>Pierre Petitpas Contact Page</title>
     <link rel="shortcut icon" href="img/favicon-32x32.ico">
     <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -32,7 +32,7 @@
   
     <main class="main_contact">
             <h1>Contact</h1>
-            <p>
+            <div class="text_contact">
                 Pierre Petitpas<br>
                 Schönhauser Allee 140 A <br>
                 10437 Berlin<br>
@@ -41,11 +41,11 @@
                 Telephone: <a href="tel:+4917641734941">+49 176 4173 4941</a><br>
                 Skype: <a href="skype:https://join.skype.com/invite/lGmWa4MppxpF"> Pierrepetitpas</a><br>
                 email: <a href="mailto:petitpaspierre@live.com">petitpaspierre@live.com</a><br>
-                <br>
-                <button>
-                    <a class="a__button" href="mailto:petitpaspierre@live.com">Contact Me</a>
-               </button>
-            </p>
+                <br>            
+                <form>
+                  <button class="a__button" type="submit" formaction="mailto:petitpaspierre@live.com">Contact Me</button>
+                </form>
+              </div>
         
        <!-- <form action="" method="post">
             <div class="form_contact">
@@ -64,12 +64,12 @@
     </main>
      
     <footer class="page-footer">
-        <p>Find me on</p>
+        <p class="p__footer">Find me on</p>
         <div class="social_media">
           <img src="img/github_icon.svg" alt="Github logo">
-          <img src="img/in_linked_linkedin icon_icon.svg" alt="LinkedIn logo">
+          <img src="img/in_linked_linkedin_icon_icon.svg" alt="LinkedIn logo">
         </div>
       </footer>
-      <script src="js/tota11y.min.js"></script>
+       <!--<script src="js/tota11y.min.js"></script>-->
 </body>
 </html>

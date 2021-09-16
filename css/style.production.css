@@ -29,7 +29,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: 100%;
     background-color: #000000;
   }
 
@@ -75,11 +74,18 @@ a:active {
     color: #489c79;
   }
 
-p {
+  p{
     color:  #FFFFFF;
     font-size: 1.5rem;
     line-height: 30PX;
     margin: 10px;
+  }
+
+.text_contact{
+  color:  #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 30PX;
+  margin: 10px;
 }
 
 label {
@@ -293,7 +299,10 @@ button {
         font-size: 1.5rem;
     }
     p, h2{
-        font-size: .7rem;
+        font-size: .9rem;
+    }
+    .profile__portrait{
+      display: none;
     }
   }
 
@@ -343,8 +352,9 @@ button {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the button */
-    background-color: #489c79;
-    color: --primary-color;
+    background-color: #3BEC4B;
+    color: #0A084D;
+    font-size: 17px;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
